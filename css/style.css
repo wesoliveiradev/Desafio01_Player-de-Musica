@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F0D13;
+}
+
+.app{
+    display: grid;
+    grid-template-areas: 
+    'A B'
+    'A C';
+    gap: 32px;
+    grid-template-columns: max-content max-content;
+    place-content: center;
+    height: 100vh;
+}
+
+.player{
+    font-family: "Roboto", sans-serif;
+    color: #E1E1E6;
+    padding: 28px;
+    background-color: #2A2141;
+
+}
+
+
+/* Tudo de player 1 */
+#player1{
+    grid-area: A;
+    border-radius: 9.6px;
+    width: fit-content;
+    padding: 50px 38px;
+    font-family: "Roboto", sans-serif;
+    color: #E1E1E6;
+    background-color: #2A2141;
+}
+
+#player1 img {
+    width: 191px;
+    height: 191px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 29px;
+}
+
+
+
+/* Tudo de player 2 */
+#player2{
+    grid-area: B;
+    border-radius: 9.6px;
+    width: fit-content;
+    padding: 29px ;
+    font-family: "Roboto", sans-serif;
+    color: #E1E1E6;
+    padding: 28px;
+    background-color: #2A2141;
+    height: fit-content;
+}
+
+#player2 img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+#player2 .controles {
+    margin: 29px 57px;
+}
+
+
+/* Tudo de player 3 */
+#player3{
+    grid-area: C;
+    border-radius: 9.6px;
+    width: fit-content;
+    padding: 29px;
+    font-family: "Roboto", sans-serif;
+    color: #E1E1E6;
+    padding: 28px;
+    background-color: #2A2141;
+}
+
+#player3 img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#player3 .controles {
+    margin: 29px 57px 0px 57px;
+}
+
+
+.info h1{
+    font-size: 24px;
+}
+
+.info p {
+    font-size: 19px;
+    margin-top: 10px;
+    opacity: 0.67;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+
+.barra {
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: 10px;
+}
+
+.barra::before {
+    content: '';
+    height: 6px;
+    width: 100%;
+    display: block;
+    background-color: #D9D9D9;
+    opacity: .3;
+    border-radius: 10px;
+
+    position: absolute;
+}
+
+.barra::after {
+    content: '';
+    height: 6px;
+    width: 80%;
+    display: block;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.tempo {
+    display: flex;
+    justify-content: space-between;
+    opacity: .76;
+    margin-bottom: -10px;
+}
+
+.quebra {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
