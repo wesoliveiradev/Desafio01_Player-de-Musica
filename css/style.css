@@ -156,7 +156,7 @@ body{
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 670px) {
     .app {
         display: flex;
         flex-direction: column;
@@ -167,5 +167,13 @@ body{
         height: auto;
 
         padding-block: 60px;
+    }
+
+    #player2 .controles {
+        margin: 29px 29px;
+    }
+
+    #player3 .controles{
+        margin: 29px 29px;
     }
 }
