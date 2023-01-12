@@ -155,3 +155,17 @@ body{
     gap: 28px;
     align-items: center;
 }
+
+@media (max-width: 800px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 270px;
+        margin: auto;
+
+        height: auto;
+
+        padding-block: 60px;
+    }
+}
